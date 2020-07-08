@@ -5,6 +5,7 @@
 '''
 def solution(number, k):
     i = 0
+    # 마지막까지 갔을 때 더이상 지울 수 있는 문자가 없으므로 존재하는 조건
     while i < len(number) - 1 and k > 0:
         if number[i] < number[i + 1]:   # i번째 숫자보다 i + 1번째 숫자가 크다
             number = number[:i] + number[i + 1:]    # i번째 숫자를 제거한다
