@@ -7,6 +7,7 @@
 # 스트링 정렬 시 맨 앞의 아스키코드 값 기준임
 # 접두어 관계의 쌍은 정렬 시 서로 붙어있거나 인접해있음
 # 이 문제는 모든 접두어 쌍을 찾으라는 것이 아니기 때문에 단 하나라도 존재하는지의 여부만 조사하면 됨
+
 def solution(phoneBook):
     phoneBook.sort()
     for i in range(len(phoneBook) - 1):
